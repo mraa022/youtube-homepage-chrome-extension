@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(
   	  		sendResponse({screen_shot_url:screen_shot_url});
   	  }
   	 
-  return true;
+  return true; // keeps the connection from closing.
   });
 
 

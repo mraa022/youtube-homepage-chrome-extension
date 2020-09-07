@@ -1,15 +1,14 @@
 {
 
 	"manifest_version": 2,
-	"name": "static_youtube_home_page",
+	"name": "youtube homepage screenshot taker",
 	"version":"0.1.0",
+	"description": "an extension that takes screenshots of the youtube homepage everytime you click somewhere in it (homepage)",
 	"author":"Adnan Badri",
 	"browser_action":{
 		"default_popup":"popup.html"
 	},
-	"permissions": [
-    	"<all_urls>"
-  	],
+	"permissions": ["<all_urls>"],
 	"background": {
    		"persistent": false,
    		"scripts": ["background.js"]
@@ -18,8 +17,7 @@
 	"content_scripts":[
 		{
 			"matches":["https://*.youtube.com/*"],
-			"js":["jquery.js","script.js"],
-			"css":["style.css"]
+			"js":["jquery.js","script.js"]
 		}
 	]
 
